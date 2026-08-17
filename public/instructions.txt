@@ -1,0 +1,20 @@
+=== Custom Brand Logo & Certificate Files Guide ===
+
+1. LIGHT MODE LOGO (with Name + Graphic in one file):
+   - File Path: /public/logo-light.png
+   - Fallback Path: /public/logo-light.svg
+   - Automatically displayed when the website is viewed in Light Mode.
+
+2. DARK MODE LOGO (with Name + Graphic in one file):
+   - File Path: /public/logo-dark.png
+   - Fallback Path: /public/logo-dark.svg
+   - Automatically displayed when the website is viewed in Dark Mode.
+
+3. GENERAL FALLBACK LOGO (Optional):
+   - File Path: /public/logo.png (or /public/logo.svg)
+
+4. GOVT. RECOGNITION CERTIFICATE (Popup):
+   - File Path: /public/certificate.png (or /public/certificate.jpg)
+   - Automatically opens in high-resolution popup when clicking the Certificate badge.
+
+All PNG files are rendered in high definition with automatic dark/light theme switching!

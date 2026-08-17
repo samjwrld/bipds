@@ -1,0 +1,9 @@
+# Robots.txt for Bharat IP Defence
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*?*query=
+
+# Host and Sitemap Declarations
+Host: https://ipdefensesolutions.com
+Sitemap: https://ipdefensesolutions.com/sitemap.xml

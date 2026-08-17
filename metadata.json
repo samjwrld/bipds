@@ -1,5 +1,6 @@
 {
   "name": "Bharat IP Defence Dev",
   "description": "Modern website for an Intellectual Property consulting firm focusing on patents, trademarks, and copyrights for startups and institutions.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

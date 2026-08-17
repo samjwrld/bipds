@@ -1,21 +1,22 @@
 import React from 'react';
 import { ShieldCheck, Users, Target, Award, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import BrandMarquee from '../components/BrandMarquee';
 
 export default function About() {
   return (
-    <div className="bg-slate-50 min-h-screen pt-24 pb-20">
+    <div className="bg-slate-50 dark:bg-slate-950 min-h-screen pt-24 pb-20 transition-colors duration-300">
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-20">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-red-100 text-red-600 text-sm font-bold mb-8 shadow-sm">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white dark:bg-slate-900 border border-red-100 dark:border-slate-800 text-red-600 dark:text-red-400 text-sm font-bold mb-8 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-red-500 mr-2 animate-pulse"></span>
             About Us
           </div>
-          <h1 className="text-5xl font-display font-bold text-slate-900 mb-6">
-            Protecting Innovation, <br/><span className="text-red-600">Empowering Growth.</span>
+          <h1 className="text-5xl font-display font-bold text-slate-900 dark:text-white mb-6">
+            Protecting Innovation, <br/><span className="text-red-600 dark:text-red-500">Empowering Growth.</span>
           </h1>
-          <p className="text-xl text-slate-600 leading-relaxed">
+          <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
             Bharat IP Defence is India's premier Intellectual Property consulting firm, dedicated to helping startups, researchers, and enterprises secure their most valuable assets.
           </p>
         </div>
@@ -24,21 +25,21 @@ export default function About() {
       {/* Mission & Vision */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-24">
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
-            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6">
-              <Target className="w-7 h-7 text-red-600" />
+          <div className="bg-white dark:bg-slate-900 p-10 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800">
+            <div className="w-14 h-14 bg-red-50 dark:bg-red-950/60 rounded-2xl flex items-center justify-center mb-6">
+              <Target className="w-7 h-7 text-red-600 dark:text-red-400" />
             </div>
-            <h2 className="text-2xl font-display font-bold text-slate-900 mb-4">Our Mission</h2>
-            <p className="text-slate-600 leading-relaxed">
+            <h2 className="text-2xl font-display font-bold text-slate-900 dark:text-white mb-4">Our Mission</h2>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
               To democratize Intellectual Property protection in India by making expert legal counsel accessible, affordable, and transparent for every innovator. We strive to build a robust IP ecosystem that fuels national growth and technological advancement.
             </p>
           </div>
-          <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
-            <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6">
-              <Award className="w-7 h-7 text-red-600" />
+          <div className="bg-white dark:bg-slate-900 p-10 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800">
+            <div className="w-14 h-14 bg-red-50 dark:bg-red-950/60 rounded-2xl flex items-center justify-center mb-6">
+              <Award className="w-7 h-7 text-red-600 dark:text-red-400" />
             </div>
-            <h2 className="text-2xl font-display font-bold text-slate-900 mb-4">Our Vision</h2>
-            <p className="text-slate-600 leading-relaxed">
+            <h2 className="text-2xl font-display font-bold text-slate-900 dark:text-white mb-4">Our Vision</h2>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
               To be the most trusted partner for IP strategy in India, recognized for our integrity, technical expertise, and unwavering commitment to client success. We envision a future where every Indian innovation is legally protected and commercially viable.
             </p>
           </div>
@@ -46,7 +47,7 @@ export default function About() {
       </div>
 
       {/* Why Bharat IP Defence */}
-      <div className="bg-slate-900 text-white py-24 mb-24">
+      <div className="bg-slate-900 dark:bg-slate-900/90 border-y border-slate-800 text-white py-24 mb-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Why Bharat IP Defence?</h2>
@@ -85,8 +86,8 @@ export default function About() {
       {/* Team Section */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-24">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900 mb-4">Meet Our Experts</h2>
-          <p className="text-lg text-slate-600">The minds protecting your innovations.</p>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900 dark:text-white mb-4">Meet Our Experts</h2>
+          <p className="text-lg text-slate-600 dark:text-slate-300">The minds protecting your innovations.</p>
         </div>
 
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -132,7 +133,7 @@ export default function About() {
               image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&q=80&w=400",
             }
           ].map((member, idx) => (
-            <div key={idx} className="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+            <div key={idx} className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all duration-300 group">
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={member.image} 
@@ -142,12 +143,17 @@ export default function About() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-1">{member.name}</h3>
-                <div className="text-red-600 font-medium text-xs">{member.role}</div>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1">{member.name}</h3>
+                <div className="text-red-600 dark:text-red-400 font-medium text-xs">{member.role}</div>
               </div>
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Trusted By Brands & Institutions */}
+      <div className="mb-24">
+        <BrandMarquee />
       </div>
 
       {/* CTA */}
